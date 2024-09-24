@@ -1,0 +1,125 @@
+/* General Body Styles */
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar Styles */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main Content Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allows the columns to wrap into rows */
+}
+
+/* Column Styles */
+.column {
+    padding: 15px;
+}
+
+/* Unequal Column Widths */
+.column.side {
+    width: 25%; /* Side columns */
+}
+
+.column.middle {
+    width: 50%; /* Main content column */
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%; /* Stacks columns on small screens */
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: skyblue;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    margin: 5px 0 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a050;
+}
+
+span {
+    color: red;
+    font-size: 0.9em;
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
